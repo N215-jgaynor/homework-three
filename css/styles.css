@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -22,26 +21,20 @@ p {
 
 @font-face {
   font-family: GillSans-Regular;
-  src: url(../css/fonts/GillSans.ttc);
+  src: url(fonts/GillSans.ttc);
 }
 @font-face {
   font-family: ProximaNova-ExtraCondensed;
-  src: url(/css/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+  src: url(fonts/ProximaNovaScOsfExtraCondensed.ttf);
 }
 nav {
   max-width: 980px;
   height: 90px;
   margin: 0 auto;
   border-bottom: 2px solid white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   z-index: 99;
 }
@@ -66,29 +59,29 @@ nav .links span {
   font-size: 21.5px;
 }
 
+@media screen and (max-width: 1280px) {
+  nav {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 900px) {
+  nav {
+    max-width: 720px;
+  }
+}
 .banner {
   max-width: 1280px;
   height: 500px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../images/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/hero.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: -90px auto 0 auto;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .banner h1 {
   margin-top: 90px;
@@ -109,31 +102,25 @@ nav .links span {
   margin: 50px 0 43px;
   font-size: 15px;
   font-family: GillSans-Regular;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .banner .home-banner-button p {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1280px) {
+  .banner {
+    max-width: 100%;
+  }
+}
 .home-tour {
   max-width: 818px;
   height: 304px;
   margin: -43px auto 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   color: white;
   font-family: ProximaNova-ExtraCondensed;
 }
@@ -153,12 +140,8 @@ nav .links span {
   color: white;
   font-size: 15px;
   font-family: GillSans-Regular;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .home-tour .learn-more-button p {
   margin: 0 auto;
@@ -166,68 +149,38 @@ nav .links span {
 .home-tour .home-tourOne {
   width: 236px;
   height: 304px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/images/tour-01.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/tour-01.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-01.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .home-tour .home-tourTwo {
   width: 236px;
   height: 304px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/images/tour-02.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/tour-02.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-02.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .home-tour .home-tourThree {
   width: 236px;
   height: 304px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/images/tour-03.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/tour-03.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-03.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-content {
@@ -248,19 +201,10 @@ nav .links span {
   padding-left: 20px;
 }
 .form-content .top-boxesOne {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .form-content .top-boxesOne .short-box {
   width: 344px;
@@ -273,19 +217,10 @@ nav .links span {
   border: 2px solid #79addc;
 }
 .form-content .top-boxesTwo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   margin: 20px 0 20px 0;
 }
 .form-content .top-boxesTwo .short-box {
@@ -299,19 +234,10 @@ nav .links span {
   border: 2px solid #79addc;
 }
 .form-content .middle-boxesOne {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .form-content .middle-boxesOne h3 {
   font-family: GillSans-Regular;
@@ -325,19 +251,10 @@ nav .links span {
   border: 2px solid #79addc;
 }
 .form-content .middle-boxesTwo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   margin: 20px 0;
 }
 .form-content .middle-boxesTwo h3 {
@@ -353,15 +270,9 @@ nav .links span {
 }
 .form-content .adult-children-rooms-container {
   height: 58px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   color: black;
   font-family: GillSans-Regular;
   font-size: 18px;
@@ -372,16 +283,9 @@ nav .links span {
 }
 .form-content .adult-children-rooms-container .aligned-box-container {
   width: 698px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .form-content .adult-children-rooms-container .aligned-box-container h3 {
   margin-left: 30px;
@@ -393,16 +297,10 @@ nav .links span {
   border: 2px solid #79addc;
   font-family: GillSans-Regular;
   color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 18px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 0 10px 0 20px;
 }
 .form-content .adult-children-rooms-container .aligned-box-container .xsmall-box h2 {
@@ -417,16 +315,15 @@ nav .links span {
   background-position: center;
 }
 .form-content .bottom-box-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-}
-.form-content .bottom-box-container .bottom-box {
   width: 818px;
   height: 192px;
   border: 2px solid #79addc;
   background-color: white;
   margin-bottom: 37px;
+}
+.form-content .bottom-box-container input {
+  padding-bottom: 130px;
 }
 .form-content .form-submit {
   height: 60.59px;
@@ -436,15 +333,8 @@ nav .links span {
   color: white;
   font-family: GillSans-Regular;
   font-size: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.form-content .form-submit p {
-  margin: auto;
+  justify-content: center;
 }
 
 footer {
@@ -457,15 +347,9 @@ footer .footer-content {
   width: 980px;
   height: 100%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 footer .footer-content .footer-logo {
   width: 92px;
@@ -478,8 +362,6 @@ footer .footer-content .footer-center-text {
   color: white;
   font-family: GillSans-Regular;
   font-size: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 footer .footer-content .footer-center-text p {
@@ -488,19 +370,18 @@ footer .footer-content .footer-center-text p {
 footer .footer-content .footer-media-icons {
   width: 113px;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   font-size: 23px;
   color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
+
+@media screen and (max-width: 1295px) {
+  footer {
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

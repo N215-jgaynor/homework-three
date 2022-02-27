@@ -1,0 +1,11 @@
+{
+
+  "scripts": {
+    "serve": "live-server",
+    "compile:sass": "sass scss/styles.scss css/styles.css -w"
+  },
+
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}
